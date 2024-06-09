@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/logo/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./images/logo/favicon.png"
+      type="image/x-icon"
+    />
     <title>Fashio</title>
     <link rel="stylesheet" href="style.css" />
     <script
@@ -13,26 +17,34 @@
   </head>
   <body>
     <header id="header">
-      <a href="#"><img src="images/logo/logo2.png" alt="logo" class="logo" /></a>
+      <a href="#"
+        ><img src="images/logo/logo2.png" alt="logo" class="logo"
+      /></a>
 
       <div>
         <ul id="navbar">
+          <li><i class="fa-solid fa-close" id="closebar"></i></li>
           <li><a class="active" href="index.html">Home</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li>
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a id="bag" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
           </li>
         </ul>
+      </div>
+      <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          <i class="fas fa-outdent" id="bar"></i>
+            
       </div>
     </header>
 
     <section id="hero">
-      <h4>Trendy, Comfortable, Affordable</h4>
-      <h2>Latest Summer Collection 2024</h2>
-      <h1>Discover Your Style</h1>
+      <h4>Trendy,Affordable</h4>
+      <h2>Excellent Offer</h2>
+      <h1>On All Products</h1>
       <p>
         Explore our new arrivals and find the perfect outfit for every occasion.
       </p>
@@ -355,6 +367,15 @@
         <button class="white">Collection</button>
       </div>
     </section>
+
+    <hr />
+    <footer >
+      <div class="copyright">
+        <p >
+          &copy; 2024 Fashio. All rights reserved.
+        </p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
