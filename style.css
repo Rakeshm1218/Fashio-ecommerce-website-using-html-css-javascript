@@ -403,7 +403,6 @@ footer {
     background-color: #fcfaf9;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.03);
     padding: 20px 0 0 10px;
-    transition: 0.4s;
     animation: slide 0.4s;
   }
   
