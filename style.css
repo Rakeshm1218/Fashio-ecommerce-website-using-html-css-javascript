@@ -132,12 +132,25 @@ body {
   position: absolute;
   bottom: -4px;
   left: 20px;
+  animation: slide-hover 0.4s;
+}
+
+@keyframes slide-hover {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 30%;
+  }
+  
 }
 
 #mobile,
 #closebar {
   display: none;
 }
+
+
 
 
 @keyframes slide {
