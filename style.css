@@ -531,12 +531,12 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  #prodetails .single-pro-image {
-    width: 100%;
-    margin-right: 0px;
+  #prodetails .single-pro-image{
+    width: 100% !important; 
   }
-  #prodetails .single-pro-details {
-    width: 100%;
+  #prodetails .single-pro-details{
+    width: 100% !important; 
+    margin-left: 10px;
   }
 }
 
@@ -595,7 +595,7 @@ footer {
 
 #prodetails .single-pro-image {
   width: 40%;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
 .small-img-group {
@@ -609,7 +609,8 @@ footer {
 }
 
 #prodetails .single-pro-details {
-  width: 50%;
+  margin-left: 10px;
+  width: 60%;
   padding-top: 30px;
 }
 
