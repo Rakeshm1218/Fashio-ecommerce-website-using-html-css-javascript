@@ -39,7 +39,7 @@ h6 {
 
 p {
   font-size: 16px;
-  color: #333333;
+  color: #777;
   margin: 15px 0 20px 0;
 }
 
@@ -87,8 +87,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
-  background-color: transparent;
-  backdrop-filter: blur(100px);
+  background-color: #fff;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   z-index: 999;
   position: sticky;
@@ -376,8 +375,6 @@ footer {
   padding: 10px 80px;
 }
 
-
-
 /*Shop page*/
 #shop-banner {
   display: flex;
@@ -484,82 +481,135 @@ footer {
   line-height: 25px;
 }
 
-
 /* about page */
 
-#page-header.about-header{
-    background-image: url('./images/about/banner.png');
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-    padding: 100px 0;
+#page-header.about-header {
+  background-image: url("./images/about/banner.png");
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0;
 }
 
-#page-header.about-header h2{
+#page-header.about-header h2 {
   color: #fff;
 }
-#page-header.about-header p{
+#page-header.about-header p {
   color: #fff;
 }
-#about-head{
+#about-head {
   display: flex;
   align-items: center;
 }
-#about-head div p{
+#about-head div p {
   margin-bottom: 0;
 }
-#about-head img{
+#about-head img {
   height: auto;
   width: 50%;
 }
 
-#about-head div{
+#about-head div {
   padding-left: 40px;
 }
 
-#about-app{
+#about-app {
   text-align: center;
 }
 
 #about-app .video {
-    width: 70%;
-    height: 100%;
-    margin: 30px auto 0 auto;
+  width: 70%;
+  height: 100%;
+  margin: 30px auto 0 auto;
 }
 
 #about-app .video video {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
+/* contact page*/
 
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+#contact-details .details {
+  width: 40%;
+}
 
+#contact-details .details span,
+#form-details form span {
+  font-size: 12px;
+}
+#contact-details .details h2,
+#form-details form h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 10px 0;
+}
 
+#contact-details .details h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
 
+#contact-details .details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+#contact-details .details li i {
+  font-size: 14px;
+  padding-right: 22px;
+}
 
+#contact-details .details li p {
+  margin: 0;
+  font-size: 14px;
+}
+#contact-details .map {
+  width: 55%;
+  height: 400px;
+}
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
 
+#form-details {
+  margin: 30px auto 30px auto;
+  padding: 60px;
+  border: 1px solid #e1e1e1;
+  width: 50%;
+}
+#form-details form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#form-details form input,
+#form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+#form-details form button{
+  background-color: #0f7b64 ;
+  color: #fff;
+}
+#form-details form button:hover{
+  background-color: #0c6a56 ;
+}
+#form-details form button:active{
+  background-color: #0f7b64 ;
+}
 
 /* Media Queries */
 
@@ -601,7 +651,7 @@ footer {
   }
   #mobile i {
     color: #333333;
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 20px;
   }
 
@@ -639,6 +689,13 @@ footer {
   }
   footer {
     padding: 10px 40px;
+  }
+   
+
+  /*Contact page*/
+  #form-details {
+    padding: 40px;
+    width: 90%;
   }
 }
 
@@ -716,27 +773,39 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  #prodetails .single-pro-image{
-    width: 100% !important; 
+  #prodetails .single-pro-image {
+    width: 100% !important;
   }
-  #prodetails .single-pro-details{
-    width: 100% !important; 
+  #prodetails .single-pro-details {
+    width: 100% !important;
     margin-left: 10px;
   }
 
   /* about page*/
   #about-head {
     flex-direction: column;
+  }
+  #about-head img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #about-head div {
+    padding-left: 40px;
+    padding-left: 0;
+  }
+  #about-app .video {
+    width: 100%;
+  }
+
+  /*Contact page*/
+  #contact-details {
+    flex-direction: column;
 }
-#about-head img {
+#contact-details .details {
   width: 100%;
   margin-bottom: 20px;
 }
-#about-head div {
-  padding-left: 40px;
-  padding-left: 0;
-}
-#about-app .video {
-   width: 100%;
+#contact-details .map {
+  width: 100%;
 }
 }
