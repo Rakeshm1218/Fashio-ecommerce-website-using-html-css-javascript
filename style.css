@@ -649,9 +649,9 @@ footer {
   #mobile {
     display: flex;
   }
-  #mobile i {
+  #mobile  i{
     color: #333333;
-    font-size: 16px;
+    font-size: 20px;
     padding-left: 20px;
   }
 
